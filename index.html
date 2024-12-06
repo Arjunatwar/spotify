@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-player</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/d497f836d0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="./img/spo.png" alt="Spotify Logo"><span>Spotify</span></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <section class="music">
+            <ul>
+                <li><img src="https://m.media-amazon.com/images/M/MV5BNGNjZmI5ZjAtMTZmOS00MGYyLTg1OGMtNTk0NDAwNjU1ZjhiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Chale aana"><span>Chale aana</span></li>
+                <li><img src="https://i1.sndcdn.com/artworks-ZH687m8uec7cmntp-yDvr7w-t1080x1080.jpg" alt="Samjho na"><span>Samjho na</span></li>
+                <li><img src="https://m.media-amazon.com/images/M/MV5BOTZlYTZlNWItOGI2OS00YmU0LWFkOTgtNjRjZDI3MjNkMzdmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Closer"><span>Closer</span></li>
+                <li><img src="https://cdn.k-ennews.com/news/photo/202410/4605_12647_1448.jpg" alt="APT"><span>APT</span></li>
+                <li><img src="https://s.saregama.tech/image/c/fw_485/4/98/9a/aaj-sajeya-chill-flip-ap-1440_1685092202.jpg" alt="Aaj sajeya"><span>Aaj sajeya</span></li>
+                <li><img src="https://c.saavncdn.com/871/Aaj-Din-Chadheya-From-Love-Aaj-Kal-Club-Mix-Hindi-2022-20230430081844-500x500.jpg" alt="Aaj din chadeya"><span>Aaj din chadeya</span></li>
+            </ul>
+        </section>
+        <section class="controller">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGNjZmI5ZjAtMTZmOS00MGYyLTg1OGMtNTk0NDAwNjU1ZjhiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Controller Image">
+            <div class="seek-bar">
+                <input type="range" min="0" max="100" value="0" class="progress-bar">
+                <div class="time-stamps">
+                    <span class="current-time">0:00</span>
+                    <span class="duration">3:45</span>
+                </div>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-2x fa-backward" aria-label="Previous"></i>
+                <i class="fa-solid fa-2x fa-circle-pause" aria-label="Pause"></i>
+                <i class="fa-solid fa-2x fa-forward" aria-label="Next"></i>
+            </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

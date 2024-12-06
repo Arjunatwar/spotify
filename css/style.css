@@ -1,0 +1,192 @@
+/* Resetting styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+li {
+    list-style: none;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #010101;
+    color: white;
+    padding: 0 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    padding: 12px;
+}
+
+nav ul img {
+    width: 25px;
+}
+
+nav span {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-style: italic;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #1ed760;
+}
+
+/* Main container styles */
+.container {
+    background-color: #282828;
+    color: white;
+    width: 80vw;
+    height: 75vh;
+    margin: 75px auto;
+    border-radius: 12px;
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Music section styles */
+.music {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.music img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+.music li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid #1db954;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.music li:hover {
+    transform: scale(1.05);
+    background-color: #1db954;
+}
+
+/* Controller section styles */
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.controller img {
+    width: 350px;
+    border-radius: 50%;
+    margin-top: 20px;
+    animation: rotation 5s linear infinite;
+    will-change: transform;
+    transform: translateZ(0);
+    animation-play-state: paused;
+}
+
+.controller i {
+    margin: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.controller i:hover {
+    opacity: 0.8;
+}
+
+/* Animation */
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Seek bar styles */
+.seek-bar {
+    width: 80%;
+    margin-top: 30px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    -webkit-appearance: none;
+    background-color: #4d4d4d;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.time-stamps {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #b3b3b3;
+    font-size: 14px;
+}
+
+/* Add responsive breakpoints */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 90vw;
+        padding: 15px;
+    }
+    
+    .controller img {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95vw;
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .controller {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .controller img {
+        width: 200px;
+    }
+}

@@ -65,6 +65,8 @@ nav a:hover {
     display: flex;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: scroll;
+    scrollbar-width: none;
 }
 
 /* Music section styles */
@@ -78,6 +80,20 @@ nav a:hover {
     width: 50px;
     border-radius: 50%;
 }
+@keyframes glow-border {
+    0% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 25px 0 #ff00ff;
+    }
+    50% {
+      border-color: #00ffff;
+      box-shadow: 0 0 25px 0 #00ffff;
+    }
+    100% {
+      border-color: #ff00ff;
+      box-shadow: 0 0 25px 0 #ff00ff;
+    }
+   }
 
 .music li {
     display: flex;
@@ -107,11 +123,14 @@ nav a:hover {
 .controller img {
     width: 350px;
     border-radius: 50%;
+    border: 1px solid;
+    border-color: #ff00ff;
+    box-shadow: 0 0 25px 0 #ff00ff;
     margin-top: 20px;
-    animation: rotation 5s linear infinite;
     will-change: transform;
     transform: translateZ(0);
-    animation-play-state: paused;
+    animation: rotation 5s linear infinite paused,
+               glow-border 2s infinite alternate;
 }
 
 .controller i {

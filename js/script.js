@@ -7,7 +7,7 @@ let music = {
         },
         {
             name: "Samjho na",
-            img: "https://i1.sndcdn.com/artworks-ZH687m8uec7cmntp-yDvr7w-t1080x1080.jpg",
+            img: "https://c.saavncdn.com/852/Samjho-Na-Hindi-2022-20220209214141-500x500.jpg",
             audio: "./music/Samjho Na.m4a"
         },
         {

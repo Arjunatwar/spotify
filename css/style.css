@@ -82,15 +82,23 @@ nav a:hover {
 }
 @keyframes glow-border {
     0% {
-      border-color: #ff00ff;
+      /* border-color: #ff00ff; */
       box-shadow: 0 0 25px 0 #ff00ff;
     }
+    25%{
+        /* border-color:purple; */
+        box-shadow:0 0 25px 0 purple;
+    }
     50% {
-      border-color: #00ffff;
+      /* border-color: #00ffff; */
       box-shadow: 0 0 25px 0 #00ffff;
     }
+    75%{
+        /* border-color:greenyellow; */
+        box-shadow:0 0 25px 0 greenyellow;
+    }
     100% {
-      border-color: #ff00ff;
+      /* border-color: #ff00ff; */
       box-shadow: 0 0 25px 0 #ff00ff;
     }
    }
@@ -123,14 +131,15 @@ nav a:hover {
 .controller img {
     width: 350px;
     border-radius: 50%;
-    border: 1px solid;
-    border-color: #ff00ff;
-    box-shadow: 0 0 25px 0 #ff00ff;
+    /* border: 1px solid; */
+    /* border-color: #ff00ff; */
+    box-shadow: 0 0 25px 0 ;
     margin-top: 20px;
     will-change: transform;
     transform: translateZ(0);
+    transition: all 0.2s ease-in-out;
     animation: rotation 5s linear infinite paused,
-               glow-border 2s infinite alternate;
+               glow-border 3s infinite alternate;
 }
 
 .controller i {
